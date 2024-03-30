@@ -3,17 +3,65 @@ languageCode: en-us
 title: Seungjun Park
 theme: ["PaperMod"]
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: about
+      weight: 10
+    - identifier: skills
+      name: Skills
+      url: skills
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: projects
+      weight: 30
+
+taxonomies:
+  tag: 'tags'
+  category: 'categories'
+
 params:
+  env: 'production'
   description: 'This is my personal website built with Hugo and PaperMod theme.'
+  keywords:
+    [
+      personal,
+      website,
+      python,
+      development,
+      developer,
+      seungjun park,
+      machine intelligence,
+      ai,
+      portfolio,
+      projects,
+      engineering science,
+      engineer,
+      data engineering,
+      data analysis,
+    ]
+  ShowCodeCopyButtons: true
   social:
     github: 'https://github.com/ricebiceps'
     linkedin: 'https://www.linkedin.com/in/seung-jun-park/'
-    
-  homeInfoParams:
-    Title: "Who am I?"
-    Content: "I am an Engineering Science student at the University of Toronto with 
-    a focus in Math, Statistics and Finances. I am currently on my Professional Experience Year as a Data Analyst intern at Honda of Canada, and I am set to graduate in 2025.
-    I'm drawn towards data engineering and analysis, particularly in predicitve analytics and inferences."
+    email: 'mailto:apark.925@gmail.com'  
+  profileMode:
+    enabled: true
+    title: Who am I?
+    subtitle: >
+      I am an Engineering Science student at the University of Toronto with a focus in Math, Statistics and Finances. 
+      I am currently on my Professional Experience Year as a Data Analyst intern at Honda of Canada, and I am set to graduate in 2025.
+      I'm drawn towards data engineering and analysis, particularly in predicitve analytics and inferences. 
   socialIcons:
     - name: github
       url: "https://github.com/ricebiceps"
@@ -22,27 +70,9 @@ params:
     - name: email
       url: "mailto:apark.925@gmail.com"
 
-
-menu:
-  main:
-    - identifier: 'about'
-      name: 'About'
-      url: '/about/'
-      weight: 10
-    - identifier: 'skills'
-      name: 'Skills'
-      url: '/skills/'
-      weight: 20
-    - identifier: 'projects'
-      name: 'Projects'
-      url: '/projects/'
-      weight: 30
-
-taxonomies:
-  tag: 'tags'
-  category: 'categories'
-
 markup:
+  # Allow inline html in markdown
   goldmark:
     renderer:
       unsafe: true
+

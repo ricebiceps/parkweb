@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Skills | Seungjun Park</title>
+<title>Weather App GUI in java | Seungjun Park</title>
 <meta name="keywords" content="">
-<meta name="description" content="skills">
+<meta name="description" content="Learn the steps taken to build my weather app gui in Java">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/skills/">
+<link rel="canonical" href="http://localhost:1313/projects/weather_app_gui/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/skills/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/skills/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/weather_app_gui/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,14 +55,16 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Skills" />
-<meta property="og:description" content="This is my personal website built with Hugo and PaperMod theme." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/skills/" />
+</noscript><meta property="og:title" content="Weather App GUI in java" />
+<meta property="og:description" content="Learn the steps taken to build my weather app gui in Java" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/projects/weather_app_gui/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2024-03-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-27T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Skills"/>
-<meta name="twitter:description" content="This is my personal website built with Hugo and PaperMod theme."/>
+<meta name="twitter:title" content="Weather App GUI in java"/>
+<meta name="twitter:description" content="Learn the steps taken to build my weather app gui in Java"/>
 
 
 <script type="application/ld+json">
@@ -74,15 +75,50 @@
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "Skills",
-      "item": "http://localhost:1313/skills/"
+      "name": "Projects",
+      "item": "http://localhost:1313/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Weather App GUI in java",
+      "item": "http://localhost:1313/projects/weather_app_gui/"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Weather App GUI in java",
+  "name": "Weather App GUI in java",
+  "description": "Learn the steps taken to build my weather app gui in Java",
+  "keywords": [
+    
+  ],
+  "articleBody": "What is this? I built an app that shows the user the temperature, humidity, weather condition and wind speed when the user inputs a city.\nThis is a very simple project that I have worked on to brush up on my java skills, as well as learn more about handling json, and making http requests in java.\nHigh level summary The user inputs the name of the city/area that they want to know the weather condition of. I use the Open Meteo api to obtain data about the geocode of this area, then use it again to obtain current weather data. Then I used JSON Simple library to parse through the json, and obtain necessary data. Then this data is displayed back to the user via the GUI. Better summary at weather_app repository. Going forwards Once again, this is a very easy and simple project to brush up on java skills. I aim to create a real time analytics app using java in the future, using concepets from this project as the base.\n",
+  "wordCount" : "173",
+  "inLanguage": "en",
+  "datePublished": "2024-03-27T00:00:00Z",
+  "dateModified": "2024-03-27T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/projects/weather_app_gui/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seungjun Park",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -129,7 +165,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/skills" title="Skills">
-                    <span class="active">Skills</span>
+                    <span>Skills</span>
                 </a>
             </li>
             <li>
@@ -140,38 +176,38 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Skills
-  </h1>
-</header>
-<div class="post-content"><p>A list of technical skills and tools that I am proficient with.</p>
-<h2 id="programming-languages">Programming Languages<a hidden class="anchor" aria-hidden="true" href="#programming-languages">#</a></h2>
-<ul>
-<li>Python: Data analysis(Pandas), Machine Learning (Pytorch, XGBoost), Visualizations(Seaborn, Matplotlib, Plotly), data processing(pyspark)</li>
-<li>SQL: Data Transformation and cleaning, database management</li>
-<li>C: Pointer arithmetic, basic data structures</li>
-<li>R: Data analysis, visualizations</li>
-</ul>
-<h2 id="software-development">Software Development<a hidden class="anchor" aria-hidden="true" href="#software-development">#</a></h2>
-<ul>
-<li>Testing: Famillar with testing code with unittest</li>
-<li>Deployment: Familar with deploying applications using Docker</li>
-</ul>
-<h2 id="software-tools-and-practices">Software Tools and Practices<a hidden class="anchor" aria-hidden="true" href="#software-tools-and-practices">#</a></h2>
-<ul>
-<li>Version Control: Git, Github</li>
-<li>Project Management: jira</li>
-</ul>
-<h2 id="operating-systems">Operating Systems<a hidden class="anchor" aria-hidden="true" href="#operating-systems">#</a></h2>
-<ul>
-<li>Customized Arch Linux environment</li>
-</ul>
-<p>Check out the applications of these skills in <a href="/projects/">projects</a>.</p>
+<main class="main">
 
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Weather App GUI in java
+    </h1>
+    <div class="post-description">
+      Learn the steps taken to build my weather app gui in Java
+    </div>
+    <div class="post-meta"><span title='2024-03-27 00:00:00 +0000 UTC'>March 27, 2024</span>
 
 </div>
+  </header> 
+  <div class="post-content"><h1 id="what-is-this">What is this?<a hidden class="anchor" aria-hidden="true" href="#what-is-this">#</a></h1>
+<p>I built an app that shows the user the temperature, humidity, weather condition and wind speed when the user inputs a city.</p>
+<p>This is a very simple project that I have worked on to brush up on my java skills, as well as learn more about handling json, and making http requests in java.</p>
+<h1 id="high-level-summary">High level summary<a hidden class="anchor" aria-hidden="true" href="#high-level-summary">#</a></h1>
+<p>The user inputs the name of the city/area that they want to know the weather condition of. I use the <a href="https://open-meteo.com/">Open Meteo</a> api to obtain data about the geocode of this area, then use it again to obtain current weather data. Then I used JSON Simple library to parse through the json, and obtain necessary data. Then this data is displayed back to the user via the GUI. Better summary at <a href="https://github.com/ricebiceps/weather_app">weather_app repository</a>. <img loading="lazy" src="/images/weather_app.png" alt="weather_app"  />
+</p>
+<h1 id="going-forwards">Going forwards<a hidden class="anchor" aria-hidden="true" href="#going-forwards">#</a></h1>
+<p>Once again, this is a very easy and simple project to brush up on java skills. I aim to create a real time analytics app using java in the future, using concepets from this project as the base.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -241,6 +277,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
